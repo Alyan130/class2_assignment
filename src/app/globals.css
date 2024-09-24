@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+.home{
+  width: 590px;
+  height: 600px;
+  margin: 150px 90px;
+  text-align: left;
+  display: inline-block;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+#text{
+  color:#03045e;
+ font-size: 52px;
+ font-weight: 800;
+ line-height: 62px;
+letter-spacing:0.5;
+}
+
+#role{
+color:#03045e;
+animation: devices 2s linear 0s infinite  forwards;
+}
+
+#text2{
+margin-top:25px;
+font-size: 18px;
+line-height: 30px;
+letter-spacing: 1.1;
+color: #054364;
+}
+
+
+#check{
+  color: #ffffff;
+  background-color:#03045e;
+  width: 150px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 25px;
+}
+
+
+#check:hover{
+  color:#03045e;;
+  background-color: hsl(0, 0%, 100%);
+  border: 1px #03045e solid;
+}
+
+
+@keyframes devices {
+  50%{
+    color: rgb(99, 97, 97);
+  }
+  100%{
+    color: #03045e;;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+#pic{
+  border-radius: 50%;
+  display: inline-block;
+  width: 430px;
+  height: 470px;
+  border: 3px rgb(0, 0, 0) solid;
+  background-image: url("./images/profile.jpg");
+  background-size:contain;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
